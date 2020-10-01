@@ -110,6 +110,17 @@ i {
   align-items: center;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.attribution a {
+  color: white;
+}
+
 @media only screen and (max-width: 375px) {
   body {
     background: url("/images/bg-mobile.svg") hsl(257, 40%, 49%) no-repeat;
@@ -178,6 +189,17 @@ i {
     font-size: 0.9rem;
     font-weight: 300;
   }
+  
+  .attribution {
+  font-size: 11px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.attribution a {
+  color: white;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -248,8 +270,8 @@ i {
     font-size: 0.9rem;
     font-weight: 300;
   }
-}
-.attribution {
+  
+  .attribution {
   font-size: 11px;
   text-align: center;
   width: 90%;
@@ -259,3 +281,5 @@ i {
 .attribution a {
   color: white;
 }
+}
+
