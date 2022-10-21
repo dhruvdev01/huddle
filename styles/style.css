@@ -56,7 +56,7 @@ main {
   height: 75%;
 }
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Georgia", serif;
   font-weight: 500;
   color: white;
   font-size: 2.8rem;
@@ -86,6 +86,36 @@ button {
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
+
+.hoverbtn:hover{
+  border-color:rgb(0, 0, 0);
+  background-color: #000607;
+}
+.hoverbtn{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hoverbtn:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hoverbtn:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.hoverbtn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
 .social-links {
   position: absolute;
   right: 0.5rem;
@@ -110,6 +140,12 @@ i {
   align-items: center;
 }
 
+.social-icon:hover{
+  border-color:rgb(0, 0, 0);
+  background-color: #000607;
+
+
+}
 .attribution {
   font-size: 11px;
   text-align: center;
